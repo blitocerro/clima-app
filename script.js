@@ -19,7 +19,7 @@ function fetchWeather(city) {
 
 function showWeatherData(data) {
     const divResponse = document.getElementById('response-data')
-    divResponse.innerHTML = ' '
+    divResponse.innerHTML = " "
 
     const cityName = data.name
     const countryName = data.sys.country
@@ -34,7 +34,7 @@ function showWeatherData(data) {
     const tempInfo = document.createElement('p')
     tempInfo.textContent = `La temperatura es de: ${Math.floor(temp - diffKelvin )}°C`
 
-    const humidityInfo = document.createAttribute('p')
+    const humidityInfo = document.createElement('p')
     humidityInfo.textContent = `La humedad es de ${humidity}%`
 
     const iconInfo = document.createElement('img')
